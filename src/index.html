@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .setcolor {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 增加 -->
+    <div><div id="before">text</div></div>
+    <div>
+      <div class="parent">parent</div>
+      <div class="father2">爸爸2</div>
+      <div class="son2">儿子2</div>
+    </div>
+    <!-- 删除 -->
+    <div>
+      <div class="remove">remove</div>
+      <div class="removeall">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </div>
+    </div>
+    <!-- 改 -->
+    <div>
+      <div class="att">读取更改属性</div>
+      <div class="set-text">读取更改文本</div>
+      <div class="set-html"></div>
+      <div class="setcolor">设置颜色</div>
+      <div class="classdom">设置类</div>
+      <div class="event">事件监听</div>
+    </div>
+    <!-- 查 -->
+    <div>
+      <div class="look">
+        <div class="removeall">查找特定元素下的元素</div>
+        <div class="setall">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+    <script src="dom.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

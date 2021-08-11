@@ -165,4 +165,20 @@ window.dom = {
     }
     return i
   },
+  // 25. 封装事件委托函数
+  on(EventType, element, selector, fn) {
+    // 获取传入的祖先元素
+    if (!(element instanceof Element)) {
+      element = document.querySelector(element)
+    }
+    element.addEventListener(EventType, e => {
+      // 获取被操作的元素
+      const t = e.target
+      // 查看被操作的元素是否匹配传入的选择器
+      if (t.matches(selector)) {
+        // 将event传入回调函数
+        fn(e)
+      }
+    })
+  },
 }
